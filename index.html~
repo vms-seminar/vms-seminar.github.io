@@ -43,7 +43,7 @@
         </tr>
     </table>
 
-	<p> This seminar brings together researchers working on recent advances in the variational multiscale (VMS) method and related approaches. The event aims to foster interaction between experts in theoretical analysis, numerical methods, and applications of multiscale modeling.</p>
+	<p> This seminar brings together researchers working on recent advances in the variational multiscale (VMS) method. The event aims to foster interaction between experts in theoretical analysis, numerical methods, and applications of multiscale modeling.</p>
 
 	<p> The variational multiscale framework has become a powerful tool in the numerical treatment of complex systems featuring multiple interacting scales, with applications ranging from fluid dynamics and turbulence modeling to solid mechanics and beyond. Ongoing developments continue to expand its theoretical foundations, computational efficiency, and applicability to emerging challenges.</p>
 
@@ -74,7 +74,7 @@
   </tr>
   <tr>
     <td>Petr Knobloch (Charles U.) </td>
-    <td>Arif Masud (U. Illinois)) </td>
+    <td>Arif Masud (U. Illinois) </td>
   </tr>
   <tr>
     <td>Guglielmo Scovazzi (Duke) </td>

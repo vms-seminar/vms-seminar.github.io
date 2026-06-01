@@ -31,13 +31,13 @@
                 <a title="Home Page" href=".">Home</a>
             </td>
 	    <td class="navigation">
-                <a title="Program" href="program">Program</a>
+                <a title="Program" class="current" href="program">Program</a>
        </td>
 	    <td class="navigation">
                 <a title="Venue" href="venue">Venue</a>
         </td>
 	    <td class="navigation">
-                <a class="current" title="Registration" href="registration">Registration</a>
+                <a title="Registration" href="registration">Registration</a>
         </td>
 
         </tr>
@@ -45,7 +45,7 @@
 
     <br>
 
-
+	The program will follow soon.
 
 </body>
 </html>
