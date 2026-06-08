@@ -92,6 +92,9 @@
     <td> Michael Abdelmalik (TU Eindhoven) </td>
     <td> Marco Ten Eikelder (TU Darmstadt) </td>
   </tr>
+  <tr>
+	 <td>Artem Korobenko (Calgary U.)</td>  
+  </tr>
 </table>
 
 <h3>Organising committee </h3>
@@ -107,6 +110,21 @@
   </tr>
 </table>
 
+
+<h3> Funding </h3>
+
+This seminar is funded by the Dutch Research Council (NWO) through the ENW-M1 project ”Learning small closure models for large multiscale problems”.
+
+
+    <table class="sponsors">
+        <tr>
+            <td class="sponsor">
+                <a href="https://www.ndns.nl/">
+                    <img src="assets/NWOlogo.jpeg" alt="NDNS" style="width: 50%">
+                </a>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
