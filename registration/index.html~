@@ -37,6 +37,9 @@
                 <a title="Venue" href="venue">Venue</a>
         </td>
 	    <td class="navigation">
+                <a title="Abstracts" href="abstracts">Abstracts</a>
+        </td>
+	    <td class="navigation">
                 <a class="current" title="Registration" href="registration">Registration</a>
         </td>
 
@@ -45,7 +48,7 @@
 
     <br>
 
-	To register as a participant (not a presenter) please visit: <a>https://www.cwi.nl/en/research/scientific-computing/events/variational-multiscale-method-seminar/</a>
+	To register as a participant (not a presenter) please visit: <a href="https://www.cwi.nl/en/research/scientific-computing/events/variational-multiscale-method-seminar/">https://www.cwi.nl/en/research/scientific-computing/events/variational-multiscale-method-seminar/</a>
 
 </body>
 </html>
