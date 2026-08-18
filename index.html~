@@ -37,6 +37,9 @@
                 <a title="Venue" href="venue">Venue</a>
         </td>
 	    <td class="navigation">
+                <a title="Abstracts" href="abstracts">Abstracts</a>
+        </td>
+	    <td class="navigation">
                 <a title="Registration" href="registration">Registration</a>
         </td>
 
@@ -93,7 +96,8 @@
     <td> Marco Ten Eikelder (TU Darmstadt) </td>
   </tr>
   <tr>
-	 <td>Artem Korobenko (Calgary U.)</td>  
+	 <td> Artem Korobenko (Calgary U.)</td>  
+	 <td> Mats Larson (Umea U.)</td>  
   </tr>
 </table>
 
