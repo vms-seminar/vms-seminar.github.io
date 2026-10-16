@@ -1,19 +1,112 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="VMS seminar">
+    <meta name="description" content="VMS seminar abstracts">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Variational Multiscale, CWI, Seminar">
-      <!-- This is supposed to speed up loading pushed changes in live website -->
-    <meta http-equiv='cache-control' content='no-cache'> 
-	 <meta http-equiv='expires' content='0'> 
-	 <meta http-equiv='pragma' content='no-cache'>
-    <title> VMS seminar </title>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>VMS seminar - Abstracts</title>
+
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        .abstracts-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        .day-block {
+            margin-bottom: 36px;
+        }
+        .day-header {
+            background-color: #34495e;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px 18px 7px 18px;
+            border-radius: 8px 8px 0 0;
+        }
+        .day-theme {
+            background-color: #465d73;
+            color: white;
+            font-size: 15px;
+            font-style: italic;
+            padding: 0 18px 14px 18px;
+            margin-bottom: 14px;
+            border-radius: 0 0 8px 8px;
+        }
+        details.abstract-entry {
+            background: white;
+            border: 1px solid #dfe5e9;
+            border-radius: 7px;
+            margin: 10px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details.abstract-entry[open] {
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        summary.abstract-title {
+            cursor: pointer;
+            padding: 14px 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 1.35;
+            background: #f7f9fa;
+        }
+        summary.abstract-title:hover {
+            background: #eef3f6;
+        }
+        .speaker {
+            display: block;
+            margin-top: 5px;
+            font-weight: normal;
+            color: #667781;
+            font-size: 0.94em;
+        }
+        .abstract-body {
+            padding: 5px 20px 18px 20px;
+            line-height: 1.6;
+            color: #222;
+        }
+        .abstract-body p {
+            margin: 0.85em 0;
+        }
+        .abstract-body li {
+            margin: 0.55em 0;
+        }
+        .abstract-body h4 {
+            margin-bottom: 0.4em;
+            color: #2c3e50;
+        }
+        .reference {
+            font-size: 0.94em;
+        }
+        .abstract-controls {
+            margin-bottom: 18px;
+        }
+        .abstract-controls button {
+            padding: 8px 12px;
+            margin-right: 8px;
+            border: 1px solid #bcc7ce;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            color: #2c3e50;
+        }
+        .abstract-controls button:hover {
+            background: #f1f4f6;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,37 +114,241 @@
     <div class="banner">
         <img src="assets/banner.png" alt="Banner">
         <div class="top-left">
-            <span class="title2"> </span> 
+            <span class="title2"></span>
         </div>
     </div>
 
     <table class="navigation">
         <tr>
-            <td class="navigation">
-                <a title="Home Page" href=".">Home</a>
-            </td>
-	    <td class="navigation">
-                <a title="Program" href="program">Program</a>
-       </td>
-	    <td class="navigation">
-                <a title="Venue" href="venue">Venue</a>
-        </td>
-	    <td class="navigation">
-                <a class="current" title="Abstracts" href="abstracts">Abstracts</a>
-        </td>
-	    <td class="navigation">
-                <a title="Registration" href="registration">Registration</a>
-        </td>
-
+            <td class="navigation"><a title="Home Page" href=".">Home</a></td>
+            <td class="navigation"><a title="Program" href="program">Program</a></td>
+            <td class="navigation"><a title="Venue" href="venue">Venue</a></td>
+            <td class="navigation"><a title="Abstracts" class="current" href="abstracts">Abstracts</a></td>
+            <td class="navigation"><a title="Registration" href="registration">Registration</a></td>
         </tr>
     </table>
 
     <br>
 
-	<p>
-	Deadline abstract submission: <b> 11 September 2026 </b>	
+   <p>
+	A book of abstracts can be downloaded <a href="assets/vms_seminar_abstracts.pdf"> here. </a>
 	</p>
+
+    <div class="abstracts-wrap">
+
+        <div class="abstract-controls">
+            <button type="button" onclick="setAllAbstracts(true)">Expand all</button>
+            <button type="button" onclick="setAllAbstracts(false)">Collapse all</button>
+        </div>
+
+<section class="day-block">
+<div class="day-header">Day 1</div>
+<div class="day-theme">VMS foundations, projectors, and stabilization</div>
+<details class="abstract-entry" id="on-the-importance-of-orthogonal-subgrid-scales">
+<summary class="abstract-title">
+On the Importance of Orthogonal Subgrid Scales
+<span class="speaker">Ramon Codina</span>
+</summary>
+<div class="abstract-body"><p>In the finite element approximation of boundary value problems (BVPs), standard Galerkin formulations often suffer from well-known numerical instabilities. Variational Multiscale (VMS) methods mitigate these deficiencies by splitting the continuous solution space $V$ into a coarse, finite-dimensional finite element space $V_h$ and a complementary subgrid scale space $\widetilde{V}$. While classic residual-based VMS methods choose subgrid scales proportional to the algebraic residual, enforcing the $L^2$-orthogonality of the subgrid scales onto the finite element space—leading to the <em>Orthogonal Subgrid Scales</em> (OSGS) framework—offers profound theoretical and practical advantages. This talk highlights some key benefits of OSGS, among which:</p>
+<ol>
+<li><strong>Direct Sum Decomposition:</strong> Enforcing $L^2$-orthogonality guarantees that $V_h \cap \widetilde{V} = \{0\}$. Consequently, one achieves a true direct sum decomposition $V = V_h \oplus \widetilde{V}$ for the continuous functional space, resolving fundamental space-splitting ambiguities present in algebraic VMS variants.</li>
+<li><strong>Preservation of the Galerkin Mass Matrix in Transient Problems:</strong> In time-dependent problems, the temporal derivative term projects into the subgrid space as $P^\perp(\partial_t u_h) = 0$, where $P^\perp$ is the orthogonal projection onto $V_h^\perp$. As a result, OSGS avoids spurious mass-matrix perturbations, preserving the standard Galerkin mass matrix—which remains symmetric and positive definite—and simplifying time-integration algorithms.</li>
+<li><strong>Linear Eigenvalue Formulations:</strong> For spectral problems of the form $\mathcal{L}(u) = \lambda u$, standard residual-based stabilizers introduce dependencies on $\lambda u_h$, turning the discrete system into a complex quadratic eigenvalue problem. Under OSGS, since $P^\perp(\lambda u_h) = 0$, the structure remains a linear eigenvalue problem, significantly reducing computational complexity.</li>
+<li><strong>Monotonicity in Reduced Order Modeling (ROM):</strong> When incorporating subgrid scales into Reduced Order Modeling, OSGS provides a consistent hierarchical framework: only under OSGS can one guarantee that the ROM subgrid scale space strictly decreases as the number of POD/greedy modes increases.</li>
+<li><strong>Sharper <em>A Posteriori</em> Error Estimates:</strong> In modern adaptive mesh refinement, incorporating the orthogonal projection of the element residual into error estimators yields significantly sharper <em>a posteriori</em> estimates, resulting in effectivity indices substantially closer to unity.</li>
+<li><strong>Adherence to Lilly's Condition in ILES:</strong> In Implicit Large Eddy Simulation (ILES) of turbulent flows, OSGS is uniquely distinguished as the only subgrid modeling formulation that rigorously satisfies Lilly's condition for cross-scale energy transfer.</li>
+<li><strong>Weakly Consistent Term-by-Term Stabilization:</strong> OSGS facilitates the design of simpler, term-by-term stabilization schemes that maintain weak consistency while uncoupling complex residual projections, offering enhanced algorithmic efficiency and implementation simplicity.</li>
+</ol>
+<p>The sole computational overhead lies in an enlarged stencil or an iterative treatment of the finite element projection. In transient nonlinear problems, this second alternative comes at virtually no extra cost in practice.</p></div>
+</details>
+<details class="abstract-entry" id="projection-based-discretisations-for-variational-multiscale-problems">
+<summary class="abstract-title">
+Projection-Based Discretisations for Variational Multiscale Problems
+<span class="speaker">Suyash Shrestha</span>
+</summary>
+<div class="abstract-body"><p>The variational multiscale framework is based on a decomposition of the solution into resolved and unresolved scales induced by a projector. That projector is usually left implicit, yet it dictates what the discrete solution actually converges to. In this talk, I present a methodology in which the projector is chosen first and the discretisation is constructed to recover it. The starting point is an explicit construction of the fine-scale Green's function through algebraic dual basis functions, which encode the projector associated with a VMS decomposition and remain computable in arbitrary dimensions. From this, I build an abstract VMS method around a suitably chosen energy-orthogonal projection. The unresolved scales are resolved on a refined mesh, yielding exponential convergence to the targeted projection for advection-diffusion, and the construction extends to the incompressible Navier-Stokes equations while retaining discrete conservation of mass, kinetic energy, vorticity and enstrophy. I close with recent work in finite element exterior calculus, where I show some key properties of these energy-orthogonal projectors based on the mixed Hodge-Laplacian problem.</p></div>
+</details>
+<details class="abstract-entry" id="fine-scales-in-the-test-space-a-conservative-parameter-free-petrov-galerkin-method-between-vms-and-dpg">
+<summary class="abstract-title">
+Fine Scales in the Test Space: A Conservative, Parameter-Free Petrov--Galerkin Method between VMS and DPG
+<span class="speaker">René Hiemstra</span>
+</summary>
+<div class="abstract-body"><p>The variational multiscale method stabilises Galerkin discretisations by modelling the fine-scale part of the solution. This talk moves the fine scales to the test space. Each test function is the coarse basis function plus an element-local perturbation, and the projector defining the coarse solution is set by the choice of fine-scale space.</p>
+<p>The perturbations are Riesz representers, in a chosen inner product, of the residual the coarse basis function leaves on the fine-scale space. The stabilisation is then a Gram matrix per element, symmetric positive semidefinite by construction, with no tuning parameter beyond the inner product. This is the structure of DPG, but the Galerkin form remains the core, and the test functions sum to one, so the method is conservative where DPG needs an added constraint.</p>
+<p>We investigate the method for several singular perturbation problems, such as advection-dominated diffusion and the Oseen problem.</p></div>
+</details>
+<details class="abstract-entry" id="the-fine-scale-closure-function-an-elegant-alternative-to-the-fine-scale-green-s-function">
+<summary class="abstract-title">
+The Fine-Scale Closure Function: An Elegant Alternative to the Fine-Scale Green&#x27;s Function
+<span class="speaker">Stein Stoter</span>
+</summary>
+<div class="abstract-body"><p>We introduce the fine-scale closure function, which offers as a more direct approach to eliminating the fine-scale influence from the coarse-scale equations. Instead of one fine-scale Green's function which exists at each point in the domain, we solve one fine-scale adjoint problem for each coarse-scale basis function. The right-hand side in the adjoint is a forcing related to the coarse-scale basis function rather than a delta (which is likely not even in the dual space). By construction, the resulting fine-scale closure function is immediately the quantity of interest: the influence of $u'$ on the coarse-scale equation. No further integration is needed. In our opinion, this concept sits closer to the spirit of VMS itself: the explicit form of $u'$ is never meant to be known, yet the fine-scale Green's-function route implicitly solves for $u'$ before integrating it away again. The closure function skips that detour. We demonstrate the idea by deriving discontinuous Galerkin methods as VMS projectors and computing the resulting closure functions explicitly.</p></div>
+</details>
+<details class="abstract-entry" id="an-energy-framework-for-nonlinear-variational-multiscale-methods">
+<summary class="abstract-title">
+An Energy Framework for Nonlinear Variational Multiscale Methods
+<span class="speaker">Mats Larson</span>
+</summary>
+<div class="abstract-body"><p>We present an energy framework for nonlinear multiscale approximation of elliptic and parabolic diffusion problems with heterogeneous coefficients. A local coarse–fine decomposition defines nonlinear fine-scale corrections through constrained energy minimization. These corrections are computed on oversampled patches and assembled by a partition of unity, producing a nonlinear multiscale trial manifold.</p>
+<p>For uniformly convex potentials with bounded constitutive Hessians, an exact secant formulation yields exponential spatial localization with constants independent of the solution amplitude and the fine-to-coarse mesh ratio. Direct energy comparison then gives error estimates for global minimizers on the localized manifold, without requiring control of its curvature.</p>
+<p>We next develop a time-dependent formulation in which each step minimizes the physical energy augmented by a quadratic penalty on the change from the previous state. The previous state is retained exactly, while only the increment is localized. Under sufficient oversampling, this construction preserves energy dissipation and yields localization estimates uniform in the time-step size. It therefore admits a continuous-time limit at fixed patch depth, with an explicit error bound relative to the fine Galerkin evolution.</p>
+<p>The talk emphasizes the connection between variational fine-scale elimination, spatial localization, and energy stability. Numerical examples illustrate the stationary theory and the behavior of the time-dependent construction.</p></div>
+</details>
+<details class="abstract-entry" id="what-are-c-and-h-in-iga">
+<summary class="abstract-title">
+What Are C and H in IGA?
+<span class="speaker">Ido Akkerman</span>
+</summary>
+<div class="abstract-body"><p>We will revisit the coercivity and accuracy analysis of standard stabilized formulations [1]. Resulting in slightly relaxed stability requirements, and a stabilization parameter directly obtained from minimizing the a-priori error estimate.</p>
+<p>Moreover, the stabilization parameter directly depends on the interpolation estimate. This requires the tight estimation of the required coefficients and length scales. These are determined in a similar fashion as in [2].</p>
+<p>The standard estimation process relies on breaking the global inequalities in to element level inequalities. The inter element continuity is not taken into account, while this is the key feature that unlocks most – if not all – the performance in Isogeometric geometric analysis [3].</p>
+<h4>References</h4>
+<p class="reference">[1] Franca LP, Frey SL, Hughes TJR, Stabilized finite element methods: I. Application to the advective-diffusive model, <em>Computer Methods in Applied Mechanics and Engineering</em>, 95(39), 253–276, 1992.</p>
+<p class="reference">[2] Harari I, Hughes TJR, What are C and h?: Inequalities for the analysis and design of finite element methods, <em>Computer Methods in Applied Mechanics and Engineering</em>, 97(2), 157–192, 1992.</p>
+<p class="reference">[3] Hughes TJR, Cottrell JA, Bazilevs Y, Isogeometric analysis: CAD, finite elements, NURBS, exact geometry and mesh refinement, <em>Computer Methods in Applied Mechanics and Engineering</em>, 194(39), 4135–4195, 2005.</p></div>
+</details>
+<details class="abstract-entry" id="computation-of-parameters-in-stabilized-methods-using-machine-learning">
+<summary class="abstract-title">
+Computation of Parameters in Stabilized Methods Using Machine Learning
+<span class="speaker">Petr Knobloch</span>
+</summary>
+<div class="abstract-body"><p>To suppress unphysical values in approximate solutions to multiscale problems, one often applies stabilized methods which contain user-chosen parameters. The optimal choice of these parameters is usually not known although they typically considerably influence the quality of the approximate solutions. It is possible to compute the stabilization parameters a posteriori in an adaptive way by minimizing a target functional characterizing the quality of the approximate solution, however, this functional is often difficult to design. Moreover, the solution of this high-dimensional constrained nonlinear optimization problem is usually very time-consuming. Therefore, we propose a method based on techniques from machine learning in order to select (nearly) optimal stabilization parameters in a cheap way. The idea is to compute these parameters locally based on local data, geometric quantities and cheaply computable approximate solutions. The training phase uses parameters computed by the mentioned minimization approach employing accurate approximate solutions which can be obtained using nonlinear (and hence again costly) approaches. This general idea will be applied to the streamline upwind/Petrov-Galerkin (SUPG) method for the numerical solution of a scalar convection-diffusion equation. We will describe details of our approach and report various numerical results.</p></div>
+</details>
+<details class="abstract-entry" id="from-constrained-projectors-to-vms-discontinuity-capturing-in-finite-element-methods">
+<summary class="abstract-title">
+From Constrained Projectors to VMS Discontinuity Capturing in Finite Element Methods
+<span class="speaker">Marco ten Eikelder</span>
+</summary>
+<div class="abstract-body"><p>Spurious oscillations near sharp layers and discontinuities, known as the Gibbs phenomenon, remain a challenge in finite element methods. This talk presents constraints for eliminating these oscillations in best approximation problems and explores the connection between projector design, variational multiscale (VMS) methods, and discontinuity capturing.</p>
+<p>We introduce a Gibbs functional rooted in variation entropy theory and impose associated integral constraints in finite element best approximation problems. Numerical examples demonstrate that enforcing these constraints eliminates over- and undershoots in one-dimensional continuous approximations and significantly suppresses them in one- and higher-dimensional discontinuous approximations. We examine the dependence of the constraint domains on interelement continuity: in one dimension, discontinuous and $C^0$-continuous spaces permit elementwise constraints, whereas higher continuity requires groups of elements. In higher dimensions, feasibility limitations restrict the applicability of these constraints to discontinuous spaces.</p>
+<p>The final part explores discontinuous Galerkin projectors designed to support practical VMS formulations. The objective is to define a constrained projector, use its optimality conditions to characterize the fine-scale contribution, and introduce residual-based fine-scale models to obtain discontinuity-capturing terms. Particular attention is given to controlling oscillations while retaining a projector structure suitable for this transition.</p></div>
+</details>
+<details class="abstract-entry" id="some-stabilized-pressure-based-reduced-order-solvers-for-incompressible-flows">
+<summary class="abstract-title">
+Some Stabilized Pressure-Based Reduced Order Solvers for Incompressible Flows
+<span class="speaker">Tomás Chacón Rebollo</span>
+</summary>
+<div class="abstract-body"><p>In this talk we present some reduced order methods (ROMs) to solve the incompressible Navier-Stokes flows, oriented to pressure stabilization, without need of enrichment of the reduced velocity space. We at first study a ROM solver in which the pressure is recovered through a residual-based pressure Poisson equation. In this formulation natural boundary conditions for the pressure are set. We prove stability and error estimates in natural norms for a POD approximation of both velocity and pressure. We present some numerical results for lid-driven cavity flow and flow past a circle in good agreement with the theoretical expectations. We next present a Local Projection Stabilized formulation, for which we also prove stability and error estimates, and present some meaningful numerical tests for lid-driven flows, by comparison with inf-sup stable pairs of velocity-pressure reduced spaces.</p></div>
+</details>
+<details class="abstract-entry" id="naturally-sharpened-level-set-methods-for-incompressible-and-compressible-two-phase-flows">
+<summary class="abstract-title">
+Naturally Sharpened Level-Set Methods for Incompressible and Compressible Two-Phase Flows
+<span class="speaker">Yuri Bazilevs, Hoang Nguyen, Jongmin Rim, Shaunak Shende, and Jinhui Yan</span>
+</summary>
+<div class="abstract-body"><p>Level-set methods present an effective approach for modeling and simulation of immiscible two-phase flows, especially those in the incompressible regime. In addition, as shown in our recent work on UNDEX, level-set approaches may also be successfully extended to the cases involving highly compressible fluids. However, these methods possess several shortcomings. At the heart of level-set techniques is the so-called “redistancing” or “sharpening” step where the level-set field separating the phases is forced to satisfy a signed-distance property by either solving the Eikonal partial differential equation (PDE) as in or by employing computational-geometric techniques as in. In addition, global mass correction is typically required because the species mass balance is often lost during redistancing. These additional algorithmic steps increase the overall computational costs. Furthermore, redistancing and mass correction typically occur at the end of each time step resulting in a slight departure of the solution from its end-of-step converged values. Finally, the solution quality is often sensitive to the choice of user-defined parameters, such as the size and number of pseudo-time steps employed to integrate the Eikonal PDE.</p>
+<p>The present work intends to address these shortcomings, demonstrating the proposed approach in the framework of compressible and incompressible flows. More specifically, we propose to avoid the additional sharpening and mass balancing steps by directly solving the governing equations of two-phase flows augmented with extra terms designed to preserve interface sharpness without upsetting the mass balance. We introduce the following novel features in the proposed formulation:</p>
+<ul>
+<li>We develop an explicit expression for the “sharpening velocity” derived based on the Eikonal PDE.</li>
+<li>We incorporate this new sharpening velocity into the governing equations of two-phase flows, which results in a modification of the transport terms in all the balance laws, i.e., mass, momentum, and energy.</li>
+</ul>
+<p>As a result, advancing the multiphase-flow solutions in time, sharpening of the interfaces, and balancing of the global species mass occur simultaneously, making the overall formulation more efficient, robust, and less reliant on user-defined input parameters.</p>
+<p>We first develop the formulation for compressible flows and demonstrate it on 2D and 3D examples of underwater blast (UNDEX). We then present the incompressible case and show examples ranging from capillary to large-scale dam-break flows.</p></div>
+</details>
+</section>
+<section class="day-block">
+<div class="day-header">Day 2</div>
+<div class="day-theme">VMS in complex flows, boundaries, turbulence, and closure</div>
+<details class="abstract-entry" id="variational-multiscale-discontinuous-galerkin-vmdg-method-for-adaptive-enforcement-of-immersed-boundary-conditions">
+<summary class="abstract-title">
+Variational Multiscale Discontinuous-Galerkin (VMDG) Method for Adaptive Enforcement of Immersed Boundary Conditions
+<span class="speaker">Arif Masud, Sitanan Tianpakdipat, and Ignasius P.A. Wijaya</span>
+</summary>
+<div class="abstract-body"><p>This talk presents an extension of the Variational Multiscale Discontinuous Galerkin (VMDG) method to immersed boundary formulations. The proposed framework addresses key challenges associated with immersed discretizations, including the accurate representation of curved interfaces and the emergence of sliver elements in background meshes. These challenges are addressed through an automatic, constitutively informed adjustment of the interfacial stabilization tensor, enabling robust and stable enforcement of boundary conditions without requiring a boundary-conforming mesh. An augmented Lagrangian algorithm is further introduced to enhance the enforcement of Dirichlet boundary conditions on immersed surfaces. The formulation is implemented within the finite element framework and demonstrated through several three-dimensional test cases involving flow around complex geometries. The numerical examples highlight the accuracy, robustness, and geometric flexibility of the proposed immersed VMDG method.</p></div>
+</details>
+<details class="abstract-entry" id="implementing-the-variational-multiscale-method-in-the-context-of-the-shifted-boundary-method">
+<summary class="abstract-title">
+Implementing the Variational Multiscale Method in the Context of the Shifted Boundary Method
+<span class="speaker">Guglielmo Scovazzi</span>
+</summary>
+<div class="abstract-body"><p>The Shifted Boundary Method (SBM) is an alternative to traditional unfitted FEM approaches that addresses the small cut-cell problem by eliminating cell cutting altogether.</p>
+<p>The SBM introduces surrogate domains which contain only fully formed elements. The true boundary conditions are shifted to the location of the surrogate domain boundary by extension operators constructed with Taylor expansions, preserving accuracy.</p>
+<p>In many applications, such as CFD, incompressible elasticity, or gradient reconstruction near boundaries, the SBM relies on the Variational Multiscale (VMS) approach, because it is a simple approach that allows the use of equal-order finite element interpolation.</p>
+<p>In this talk, we show how the VMS is essential in the context of mixed formulations for gradient reconstruction and we will present many lessons learned on how to effectively scale the parameters in the VMS formulation when the SBM is used, as a prototype of an immersed boundary FEM.</p>
+<p>Time-permitting, we will also present results on residual-based shock capturing operators and their interaction with the SBM framework.</p></div>
+</details>
+<details class="abstract-entry" id="dirichlet-boundary-stabilization-in-space-time-computational-analysis-derivation-in-elastodynamics">
+<summary class="abstract-title">
+Dirichlet-Boundary Stabilization in Space--Time Computational Analysis: Derivation in Elastodynamics
+<span class="speaker">Yasutoshi Taniguchi</span>
+</summary>
+<div class="abstract-body"><p>We present Dirichlet-boundary stabilization for improving the accuracy of boundary fluxes in space–time computational analysis. For elastodynamics, the approach consists of a Nitsche-type formulation with additional stabilization terms at the Dirichlet boundary and a related postprocessing procedure for the strongly-enforced Dirichlet formulation. We present the derivation of the methods and test computations showing that the stabilization improves the accuracy of the boundary reaction force while essentially preserving the solution in the interior domain. Ongoing extensions to multidimensional elastodynamics will also be briefly discussed.</p></div>
+</details>
+<details class="abstract-entry" id="a-gradient-robust-scheme-for-the-isentropic-compressible-stokes-problem">
+<summary class="abstract-title">
+A Gradient-Robust Scheme for the Isentropic Compressible Stokes Problem
+<span class="speaker">Volker John</span>
+</summary>
+<div class="abstract-body"><p>This talk presents a scheme for the isentropic compressible Stokes problem that has two important ingredients. The first one is a reconstruction operator on the right-hand side that improves the correct balance of gradient forces in hydrostatic situations. This so-called gradient-robustness makes the scheme asymptotics-preserving (AP) in the zero Mach number limit in the sense that it converges on fixed grids to a pressure-robust scheme for the incompressible Stokes problem. The second ingredient is an AP-compatible stabilization term in the continuity equation that allows a-priori provable strong convergence of the scheme, in particular the satisfaction of the nonlinear barotropic equation of state in the limit. The talk discusses algorithmic details, stability and convergence of the scheme as well as error estimates for the velocity. The results are illustrated with some numerical examples.</p></div>
+</details>
+<details class="abstract-entry" id="variational-multiscale-closures-for-the-boltzmann-equation">
+<summary class="abstract-title">
+Variational Multiscale Closures for the Boltzmann Equation
+<span class="speaker">Michael Abdelmalik</span>
+</summary>
+<div class="abstract-body"><p>Extending fluid dynamics to rarefied regimes, where the molecular mean free path is no longer negligible relative to characteristic flow lengths, requires constitutive relations for stress and heat flux that account for microscopic effects. These effects are described by the Boltzmann equation, which governs the distribution of the fluid’s particles over time, position and velocity. Taking velocity moments of the Boltzmann equation yields a hierarchy of equations for macroscopic quantities such as density, momentum and energy. Because each equation involves higher moments, truncating the hierarchy requires closure through a subspace approximation of the distribution function.</p>
+<p>This talk presents a variational multiscale approach to this closure problem, with the aim of extending the Navier–Stokes–Fourier equations to rarefied flows [1]. A projection-based coarse–fine decomposition of velocity space separates resolved hydrodynamic modes from unresolved kinetic modes. Approximating the fine-scale response then yields constitutive relations that carry the unresolved kinetic effects into the macroscopic conservation equations.</p>
+<p>The framework subsumes the Chapman–Enskog expansion. Its first-order truncation recovers the Navier–Stokes–Fourier equations, but higher-order (Burnett-type) truncations can lose entropy stability. We develop an alternative closed-form fine-scale approximation that is entropy stable at all Knudsen numbers. It yields an extension with fourth-order spatial derivatives in the stress and heat flux. We conclude with stationary heat-transfer and Poiseuille-flow benchmarks for the linearized extended equations, compared against kinetic reference solutions. The extension reproduces effects beyond Navier–Stokes–Fourier, such as the Knudsen minimum in channel mass flow, and we discuss its limitations near solid walls.</p>
+<p class="reference">[1]  F. A. Baidoo, I. M. Gamba, T. J. R. Hughes, and M. R. A. Abdelmalik. “Extensions to the Navier–Stokes–Fourier equations for rarefied transport: Variational multiscale moment methods for the Boltzmann equation.” Mathematical Models and Methods in Applied Sciences 36(1) (2026): 111–172</p></div>
+</details>
+<details class="abstract-entry" id="designing-diffuser-augmented-wind-and-tidal-turbines-with-the-stabilized-mrf-method-and-the-vms-turbulence-model">
+<summary class="abstract-title">
+Designing Diffuser Augmented Wind and Tidal Turbines with the Stabilized MRF Method and the VMS Turbulence Model
+<span class="speaker">G. Hauke and H. Sanchez</span>
+</summary>
+<div class="abstract-body"><p>Harvesting the most of the wind and ocean resources presents a challenge in horizontal axial turbines and an important contribution towards the zero emissions objective. It has been shown that, for given upstream flow conditions, diffuser augmented turbines (DAWT) present an opportunity to increase the energy production of wind and tidal turbines. The design of these devices will be addressed for horizontal axis axial turbines using semi-discrete stabilized methods, MRF algorithms for fluid-structure interaction and the VMS turbulence model. Some geometries that increase the harvested wind kinetic energy will be shown and the performance of the devices will be compared with and without a turbine rotor.</p></div>
+</details>
+<details class="abstract-entry" id="stabilized-finite-element-simulation-of-hypersonic-turbulent-flows-in-thermochemical-nonequilibrium">
+<summary class="abstract-title">
+Stabilized Finite Element Simulation of Hypersonic Turbulent Flows in Thermochemical Nonequilibrium
+<span class="speaker">Artem Korobenko</span>
+</summary>
+<div class="abstract-body"><p>Hypersonic flows place unusually heavy demands on a numerical formulation. The quantities of engineering interest, surface heat flux and skin friction, are set in a thin near-wall region where the boundary layer is poorly resolved, where chemical and vibrational relaxation is stiffest, and where turbulence closure is least reliable. This talk describes a stabilized finite element framework for this regime and examines how its ingredients interact.</p>
+<p>I will begin with the formulation itself: a residual-based stabilized discretization of the compressible Navier-Stokes equations coupled to a multi-temperature thermochemical nonequilibrium model with finite-rate chemistry. Here the stabilization terms are understood as a model for the unresolved fine scales, which in this setting are governed by chemistry and relaxation as much as by convection. I will show validation against established benchmarks, including double cone, RAM-C II and FIRE-II configurations, and shock wave boundary layer interaction on a double wedge.</p>
+<p>The second part concerns turbulence. Introducing a Spalart-Allmaras closure raises a question that is natural to pose in this setting: the closure and the stabilization both act on the same unresolved near-wall content, and it is not obvious what each should be responsible for. I will present results characterizing this interaction and discuss what consistency between an explicit RANS closure and a residual-based fine-scale model ought to require.</p></div>
+</details>
+<details class="abstract-entry" id="a-stochastic-re-interpretation-of-vms">
+<summary class="abstract-title">
+A stochastic re-interpretation of VMS
+<span class="speaker">Wouter Edeling</span>
+</summary>
+<div class="abstract-body"><p>The Variational Multiscale (VMS) framework provides a systematic approach to modelling the influence of unresolved scales in numerical solutions of partial differential equations. Central to this framework is the fine-scale Green's function, which is generally difficult to compute or approximate. In this talk, we explore a connection between VMS and stochastic differential equations (SDEs), showing how Green's functions and related quantities, such as the $\tau$ stabilization parameter, can be expressed as expectations of SDE path functionals. From this stochastic perspective, closure modelling amounts to expressing the SDE drift in terms of resolved-scale quantities. Using initial results for the 1D Burgers' equation, we illustrate how both classical and newly derived stabilization parameters can be recovered from the expected exit times of stochastic processes with constant and linear drift, respectively. While deterministic derivations become increasingly involved for more general advection fields, the stochastic formulation offers a conceptually straightforward extension through the choice of the underlying SDE. Finally, we discuss how this perspective may open new avenues for developing stabilization strategies and subgrid-scale models.</p></div>
+</details>
+<details class="abstract-entry" id="the-role-of-orthogonal-subscales-in-incompressible-flows-from-turbulence-and-time-integration-to-error-estimation-and-uncertainty-quantification">
+<summary class="abstract-title">
+The Role of Orthogonal Subscales in Incompressible Flows: From Turbulence and Time Integration to Error Estimation and Uncertainty Quantification
+<span class="speaker">Oriol Colomés</span>
+</summary>
+<div class="abstract-body"><p>The Variational Multiscale (VMS) framework provides a unified and mathematically consistent approach to numerical stabilization and implicit Large Eddy Simulation (LES) in incompressible flow problems. The choice of the subscale space is one of the core components of the VMS framework. In this talk we will focus on the case of orthogonal subscales (OSS), which offers significant benefits over purely residual-based (algebraic) subscale definitions in many aspects. In turbulence modeling, one can define dynamic OSS-based formulations that preserve convective skew-symmetry to prevent artificial numerical energy production while naturally capturing physical energy cascades. Additionally, OSS can be efficiently paired with inf-sup stable velocity-pressure spaces, resulting in convection-stabilized formulations that preserve the index-2 differential-algebraic equation structure of the original Navier-Stokes equations. This structure enables the use of high-order time integration schemes through the Segregated Runge-Kutta method, which allows for velocity-pressure segregation without splitting errors and leads to coercive subproblems that can be efficiently solved using scalable preconditioners.</p>
+<p>Beyond turbulence closure models and scalable solvers, the OSS framework naturally yields explicit a-posteriori error estimators. Since these error estimators reuse the orthogonal projections already computed during the primary fluid solve, they provide reliable estimates for spatial mesh adaptivity at negligible additional computational cost. Furthermore, when evaluating system parameter uncertainties, these explicit estimators can be used to quantify global discretization errors within forward uncertainty propagation frameworks. Integrating these error estimators into a probabilistic analysis can decouple input variability from model uncertainty, establishing a robust and bias-aware uncertainty quantification methodology for complex fluid dynamics.</p></div>
+</details>
+<details class="abstract-entry" id="what-are-the-fine-scales-separating-subfilter-and-subgrid-closure-in-vms">
+<summary class="abstract-title">
+What Are the Fine Scales? Separating Subfilter and Subgrid Closure in VMS
+<span class="speaker">John A. Evans</span>
+</summary>
+<div class="abstract-body"><p>Variational multiscale (VMS) analysis provides a framework for accounting for the influence of scales that are unresolved by a numerical discretization. For a given projection, the exact VMS fine-scale problem accounts for the influence of the unresolved complement on the resolved solution. In practice, however, the exact fine-scale problem must generally be replaced by an approximate model. When such an approximate VMS model is applied directly to the Navier-Stokes equations, it may be asked to represent the effects of a very broad range of unresolved turbulent scales. This raises a natural question: how does the behavior of the same approximate VMS model change when it is instead applied to filtered Navier-Stokes equations equipped with an explicit subfilter closure?</p>
+<p>In this talk, we distinguish between two closure problems. Subfilter closure arises from an explicitly chosen filtering operation, while subgrid closure arises from scales of the filtered solution that lie outside the chosen discrete approximation space. We isolate these effects by holding the filter width fixed while refining the approximation space. The subfilter modeling problem therefore remains fixed while the subgrid modeling problem changes systematically.</p>
+<p>As a concrete stress test, we use SUPG, PSPG, and grad-div stabilization as a simple residual-based VMS model and couple it with several classical and data-driven subfilter models. We study the resulting formulations using the Taylor-Green vortex and forced isotropic turbulence. These calculations allow us to examine how subfilter and subgrid modeling choices interact as the discrete approximation space is refined while the filter scale is held fixed. We also consider the implications for dynamic procedures, whose interpretation depends on both the scale hierarchy used to define the test and the residual entering the approximate VMS model. More broadly, we discuss how distinguishing the two closure problems may clarify their respective roles and inform the design of subfilter and subgrid models that work effectively in combination, with an eye toward accuracy, stability, and interpretability.</p></div>
+</details>
+</section>
+
+    </div>
+
+    <script>
+        function setAllAbstracts(openState) {
+            document.querySelectorAll('details.abstract-entry').forEach(function(entry) {
+                entry.open = openState;
+            });
+        }
+
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target && target.tagName.toLowerCase() === 'details') {
+                target.open = true;
+                setTimeout(() => target.scrollIntoView({behavior: 'smooth', block: 'start'}), 100);
+            }
+        }
+    </script>
 
 </body>
 </html>
-
