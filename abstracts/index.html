@@ -214,22 +214,6 @@ Computation of Parameters in Stabilized Methods Using Machine Learning
 </summary>
 <div class="abstract-body"><p>To suppress unphysical values in approximate solutions to multiscale problems, one often applies stabilized methods which contain user-chosen parameters. The optimal choice of these parameters is usually not known although they typically considerably influence the quality of the approximate solutions. It is possible to compute the stabilization parameters a posteriori in an adaptive way by minimizing a target functional characterizing the quality of the approximate solution, however, this functional is often difficult to design. Moreover, the solution of this high-dimensional constrained nonlinear optimization problem is usually very time-consuming. Therefore, we propose a method based on techniques from machine learning in order to select (nearly) optimal stabilization parameters in a cheap way. The idea is to compute these parameters locally based on local data, geometric quantities and cheaply computable approximate solutions. The training phase uses parameters computed by the mentioned minimization approach employing accurate approximate solutions which can be obtained using nonlinear (and hence again costly) approaches. This general idea will be applied to the streamline upwind/Petrov-Galerkin (SUPG) method for the numerical solution of a scalar convection-diffusion equation. We will describe details of our approach and report various numerical results.</p></div>
 </details>
-<details class="abstract-entry" id="from-constrained-projectors-to-vms-discontinuity-capturing-in-finite-element-methods">
-<summary class="abstract-title">
-From Constrained Projectors to VMS Discontinuity Capturing in Finite Element Methods
-<span class="speaker">Marco ten Eikelder</span>
-</summary>
-<div class="abstract-body"><p>Spurious oscillations near sharp layers and discontinuities, known as the Gibbs phenomenon, remain a challenge in finite element methods. This talk presents constraints for eliminating these oscillations in best approximation problems and explores the connection between projector design, variational multiscale (VMS) methods, and discontinuity capturing.</p>
-<p>We introduce a Gibbs functional rooted in variation entropy theory and impose associated integral constraints in finite element best approximation problems. Numerical examples demonstrate that enforcing these constraints eliminates over- and undershoots in one-dimensional continuous approximations and significantly suppresses them in one- and higher-dimensional discontinuous approximations. We examine the dependence of the constraint domains on interelement continuity: in one dimension, discontinuous and $C^0$-continuous spaces permit elementwise constraints, whereas higher continuity requires groups of elements. In higher dimensions, feasibility limitations restrict the applicability of these constraints to discontinuous spaces.</p>
-<p>The final part explores discontinuous Galerkin projectors designed to support practical VMS formulations. The objective is to define a constrained projector, use its optimality conditions to characterize the fine-scale contribution, and introduce residual-based fine-scale models to obtain discontinuity-capturing terms. Particular attention is given to controlling oscillations while retaining a projector structure suitable for this transition.</p></div>
-</details>
-<details class="abstract-entry" id="some-stabilized-pressure-based-reduced-order-solvers-for-incompressible-flows">
-<summary class="abstract-title">
-Some Stabilized Pressure-Based Reduced Order Solvers for Incompressible Flows
-<span class="speaker">Tomás Chacón Rebollo</span>
-</summary>
-<div class="abstract-body"><p>In this talk we present some reduced order methods (ROMs) to solve the incompressible Navier-Stokes flows, oriented to pressure stabilization, without need of enrichment of the reduced velocity space. We at first study a ROM solver in which the pressure is recovered through a residual-based pressure Poisson equation. In this formulation natural boundary conditions for the pressure are set. We prove stability and error estimates in natural norms for a POD approximation of both velocity and pressure. We present some numerical results for lid-driven cavity flow and flow past a circle in good agreement with the theoretical expectations. We next present a Local Projection Stabilized formulation, for which we also prove stability and error estimates, and present some meaningful numerical tests for lid-driven flows, by comparison with inf-sup stable pairs of velocity-pressure reduced spaces.</p></div>
-</details>
 <details class="abstract-entry" id="naturally-sharpened-level-set-methods-for-incompressible-and-compressible-two-phase-flows">
 <summary class="abstract-title">
 Naturally Sharpened Level-Set Methods for Incompressible and Compressible Two-Phase Flows
@@ -243,6 +227,22 @@ Naturally Sharpened Level-Set Methods for Incompressible and Compressible Two-Ph
 </ul>
 <p>As a result, advancing the multiphase-flow solutions in time, sharpening of the interfaces, and balancing of the global species mass occur simultaneously, making the overall formulation more efficient, robust, and less reliant on user-defined input parameters.</p>
 <p>We first develop the formulation for compressible flows and demonstrate it on 2D and 3D examples of underwater blast (UNDEX). We then present the incompressible case and show examples ranging from capillary to large-scale dam-break flows.</p></div>
+</details>
+<details class="abstract-entry" id="some-stabilized-pressure-based-reduced-order-solvers-for-incompressible-flows">
+<summary class="abstract-title">
+Some Stabilized Pressure-Based Reduced Order Solvers for Incompressible Flows
+<span class="speaker">Tomás Chacón Rebollo</span>
+</summary>
+<div class="abstract-body"><p>In this talk we present some reduced order methods (ROMs) to solve the incompressible Navier-Stokes flows, oriented to pressure stabilization, without need of enrichment of the reduced velocity space. We at first study a ROM solver in which the pressure is recovered through a residual-based pressure Poisson equation. In this formulation natural boundary conditions for the pressure are set. We prove stability and error estimates in natural norms for a POD approximation of both velocity and pressure. We present some numerical results for lid-driven cavity flow and flow past a circle in good agreement with the theoretical expectations. We next present a Local Projection Stabilized formulation, for which we also prove stability and error estimates, and present some meaningful numerical tests for lid-driven flows, by comparison with inf-sup stable pairs of velocity-pressure reduced spaces.</p></div>
+</details>
+<details class="abstract-entry" id="from-constrained-projectors-to-vms-discontinuity-capturing-in-finite-element-methods">
+<summary class="abstract-title">
+From Constrained Projectors to VMS Discontinuity Capturing in Finite Element Methods
+<span class="speaker">Marco ten Eikelder</span>
+</summary>
+<div class="abstract-body"><p>Spurious oscillations near sharp layers and discontinuities, known as the Gibbs phenomenon, remain a challenge in finite element methods. This talk presents constraints for eliminating these oscillations in best approximation problems and explores the connection between projector design, variational multiscale (VMS) methods, and discontinuity capturing.</p>
+<p>We introduce a Gibbs functional rooted in variation entropy theory and impose associated integral constraints in finite element best approximation problems. Numerical examples demonstrate that enforcing these constraints eliminates over- and undershoots in one-dimensional continuous approximations and significantly suppresses them in one- and higher-dimensional discontinuous approximations. We examine the dependence of the constraint domains on interelement continuity: in one dimension, discontinuous and $C^0$-continuous spaces permit elementwise constraints, whereas higher continuity requires groups of elements. In higher dimensions, feasibility limitations restrict the applicability of these constraints to discontinuous spaces.</p>
+<p>The final part explores discontinuous Galerkin projectors designed to support practical VMS formulations. The objective is to define a constrained projector, use its optimality conditions to characterize the fine-scale contribution, and introduce residual-based fine-scale models to obtain discontinuity-capturing terms. Particular attention is given to controlling oscillations while retaining a projector structure suitable for this transition.</p></div>
 </details>
 </section>
 <section class="day-block">
