@@ -310,7 +310,7 @@
         <tr>
             <td class="ws-time">11:30 - 11:55</td>
             <td class="ws-speaker">Michael Abdelmalik</td>
-            <td class="ws-title ws-tba">Title TBD</td>
+            <td class="ws-title">Variational Multiscale Closures for the Boltzmann Equation</td>
         </tr>
 
         <tr class="ws-break">
