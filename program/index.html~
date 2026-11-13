@@ -254,7 +254,7 @@
         <tr>
             <td class="ws-time">16:30 - 16:55</td>
             <td class="ws-speaker">Thomas Hughes (online)</td>
-            <td class="ws-title ws-tba">Title TBD</td>
+            <td class="ws-title"> Image based computational modeling of brain-wide glymphatic transport. </td>
         </tr>
 
         <tr class="ws-break">
@@ -263,7 +263,7 @@
         </tr>
 
         <tr class="ws-break">
-            <td class="ws-time">17:45 - </td>
+            <td class="ws-time">17:45 </td>
             <td colspan="2">Dinner</td>
         </tr>
     </tbody>
